@@ -42,7 +42,7 @@ sudo mv /tmp/eksctl /usr/local/bin
 - Create EKS Cluster
 ```
 eksctl create cluster \
-  --name sen-devops \
+  --name armaan \
   --region ap-south-1 \
   --nodegroup-name prime-1 \
   --nodes 1 \
@@ -52,7 +52,7 @@ eksctl create cluster \
 ```
 - Update kubeconfig to Access the EKS Cluster
 ```
-aws eks --region ap-south-1 update-kubeconfig --name sen-devops
+aws eks --region ap-south-1 update-kubeconfig --name armaan
 ```
 - Verify the Connection to the EKS Cluster
 ```
